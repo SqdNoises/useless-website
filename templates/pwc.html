@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password changed</title>
+    </head>
+    <body>
+        <form action = "{{a}}/home" method = "post">
+            <table>
+                <tr><td><h1>Password changed!</h1></td></tr>
+                <tr><td><p>Your password for account `{{user}}` was changed to `{{npw}}`</p></td></tr>
+                <tr><td><input type="hidden" name="username" value="{0}"></td></tr>
+                <tr><td><input type="hidden" name="password" value="{1}"></td></tr>
+            </table>
+            <input type = "submit" value = "Goto Home">
+            <a href="{{a}}/">Return to main site</a>
+        </form>
+    </body>
+</html>
